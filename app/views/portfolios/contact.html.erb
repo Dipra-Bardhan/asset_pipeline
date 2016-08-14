@@ -10,27 +10,25 @@
             <%= form_tag '/messages', method: :post do %>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
 
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
-                                    <%= text_field_tag :name, "Name", class: "form-control" %>
+                                    <%= text_field_tag :name, "", placeholder: "Name", class: "form-control" %>
                                 </div>
                             </div>
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
-                                    <%= text_field_tag :email, "Email", type: "email", class: "form-control" %>
+                                    <%= text_field_tag :email, "", placeholder: "Email", type: "email", class: "form-control" %>
                                 </div>
                             </div>
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
-                                    <%= text_field_tag :phone_number, "Phone Number", class: "form-control" %>
+                                    <%= text_field_tag :phone_number, "", placeholder: "Phone Number", class: "form-control" %>
                                 </div>
                             </div>
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
-                                    <%= text_field_tag :message, "Message", class: "form-control" %>
+                                    <%= text_field_tag :message, "", placeholder: "Message", class: "form-control" %>
                                 </div>
                             </div>
                             <br>
